@@ -1,0 +1,61 @@
+Poised Engineering is a program to allow the company to capture vital business information in order to manage projects that have been assigned to the company.
+The software will allow the user to:
+1: View all unfinished projects
+2: View projects past their due date
+3: Contractor options
+4: Architect options
+5: Client Options
+6: Project Options
+7: Invoice Options
+8: Receive Payment
+0: Close the program
+
+The user starts by executing the PoisedEngineering.java file, and the rest of the files are part of the program.
+
+
+- 1: View all unfinished projects
++	the user selects this option and a list of all the unfinished projects are displayed.
+
+- 2: View projects past their due date
++	The user selects this option and a list of all the unfinished and overdue projects are displayed. 
+
+- 3: Contractor options
++	The user selects this option and an additional set of contractor options become available to the user. The user enters the contractor code in order to view 
+		1: New Contractor - The user can add a new contractor record
+		2: Update Contractor Details - The user can update an existing contractor record
+		3: Search for Contractor - The user can search for an existing contractor record
+		4: Archive Contractor - The user can archive an existing contractor record
+		0: Back to Main Menu - This option takes the user ack to the main menu
+- 4: Architect options
++	The user selects this option and an additional set of architect options become available to the user.
+		1: New Architect - The user can add a new architect record
+		2: Update Architect Details - The user can update an existing architect record
+		3: Search for Architect - The user can search for an existing architect record
+		4: Archive Architect - The user can archive an existing architect record
+		0: Back to Main Menu - This option takes the user ack to the main menu
+- 5: Client Options
++	The user selects this option and an additional set of client options become available to the user.
+		1: New Client - The user can add a new client record
+		2: Update Client Details  - The user can update an existing client record
+		3: Search for a Client  - The user can search for an existing client record
+		4: Archive Client - The user can archive an existing client record
+		0: Back to Main Menu - This option takes the user ack to the main menu
+- 6: Project Options
++	The user selects this option and an additional set of project options become available to the user.
+		1: New Project  - The user can add a new project record
+		2: Finalize Project - The user can mark an existing project as finalized
+		3: Update Project - The user can update an existing project record
+		4: Search for Project  - The user can search for an existing project record
+		5: Receive Payment - The user can enter a payment record to an existing project record
+		0: Back to Main Menu - This option takes the user ack to the main menu
+- 7: Invoice Options
++	The user selects this option and an additional set of invoice options become available to the user.
+			1: Create Invoice - The user can add a new invoice record
+			2: Cancel Invoice - THe user can mark an existing record as cancelled
+			3: Search for Invoice  - The user can search for an existing invoice record
+			4: Back to Main Menu - This option takes the user ack to the main menu
+- 8: Receive Payment
++	The user selects this option and can make a payment towards a project.
+	
+- 0: Close the program
++	The user selects this option to close the program.

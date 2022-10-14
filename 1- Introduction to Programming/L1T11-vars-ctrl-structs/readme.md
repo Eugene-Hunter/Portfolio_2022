@@ -1,0 +1,1 @@
+In this task, the calculator calculates the compound and simple return on interest and mortgage debt.

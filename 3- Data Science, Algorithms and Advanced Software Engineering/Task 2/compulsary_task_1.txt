@@ -1,0 +1,60 @@
+ Consider the following statement of requirements for part of a
+ticket-issuing system:
+
+An automated ticket-issuing system sells rail tickets. 
+Users select their destination and input a credit card and a personal identification number.
+The rail ticket is issued and their credit card account charged. 
+When the user presses the start button, a menu display of potential destinations is activated, along with a message to the user to select a destination. 
+Once a destination has been selected, users are requested to input their credit card. 
+Its validity is checked and the user is requested to input a personal identifier. 
+When the credit transaction has been validated, the ticket is issued.
+
+Based on this:
+
+? Discuss any ambiguities or omissions in the statement of
+requirements for the part of a ticket-issuing system.
++ The order in which the process should take place is not correct. The order of events should be as follows including ommissions: 
+
+++An automated ticket-issuing system sells rail tickets.  
+++When the user presses the start button, a menu display of potential destinations is activated, along with a message to the user to select a destination.
+++Users select their destination and input  the number of seats or compartments they wish to book.
+** Users are requested to input a credit card number, the expiry date and a personal identification number.
+++Its validity is checked and the user is requested to input a personal identifier. 
+++When the credit transaction has been validated, the their credit card account is charged.
+++Once the payment was successfully completed, the rail ticket is issued
+**The user receives a notification via email of the transaction details that serve as backup should the user lose the ticket.
+**The user presses the close icon in the top right-hand corner of the window and the program closes.
+
+? Write a set of non-functional requirements for the ticket-issuing
+system above. You are free to make assumptions regarding the
+system based on ambiguities or omissions you identified previously.
+
+Non-functional requirements: Characteristics of the system as a
+whole, including its constraints, but excluding the activities covered in
+the functional requirements.
+Usability: These requirements describe operational characteristics related to
+users, such as the user interface, related work procedures, online help, and
+documentation.
+Reliability: These requirements describe the dependability of a system. In
+other words, reliability is to do with how a system detects and recovers from
+such behaviours as service outages and incorrect processing.
+Performance: These requirements describe operational characteristics
+related to measures of workload, such as throughput and response time.
+Security: These requirements describe how access to the application will be
+controlled and how data will be protected during storage and transmission.
+
+FURPS+ is an extension of FURPS that adds additional categories — all of which
+are summarised by the plus sign. Below is a short description of each additional
+category:
+Design constraints: These describe restrictions to which the hardware and
+software must adhere.
+Implementation requirements: These describe constraints such as
+required programming languages and tools, documentation methods and
+level of detail, and a specific communication protocol for distributed
+components
+Interface requirements: These describe interactions among systems.
+Physical requirements: These describe the characteristics of the hardware
+such as size, weight, power consumption, and operating conditions.
+Supportability requirements: These describe how a system is installed,
+configured, monitored, and updated.
+

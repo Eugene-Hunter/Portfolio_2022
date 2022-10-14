@@ -1,0 +1,4 @@
+PR1;CL1;Hunter Residence;2600000.0;1000000.0
+PR2;CL2;Animal Farm;2000000.0;500000.0
+PR3;CL3;Park Trust Building project;8000000.0;400000.0
+PR4;CL4;Bradley House;2550000.0;850000.0

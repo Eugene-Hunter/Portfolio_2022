@@ -1,0 +1,52 @@
++++++++++++++++++++++++++
+| 	Teacher		|
++++++++++++++++++++++++++
+|+ nameAndSurname 	|
+|+ age			|
+|+ employDate 		|
+|+ salary		|
+|+ subject		|
++++++++++++++++++++++++++
+|+ get nameAndSurname	|
+|+ getAge		|
+|+ getemployDate	|
+|+ getSalary		|
+|+ getSubject		|
+|+ to String		|
+|+ contructor		|
++++++++++++++++++++++++++	
+
++++++++++++++++++++++++++
+| 	Secretary	|
++++++++++++++++++++++++++
+|+ nameAndSurname 	|
+|+ age			|
+|+ employDate 		|
+|+ salary		|
+|+ manager		|
++++++++++++++++++++++++++
+|+ get nameAndSurname	|
+|+ getAge		|
+|+ getEmployDate	|
+|+ getSalary		|
+|+ getManager		|
+|+ to String		|
+|+ contructor		|
++++++++++++++++++++++++++	
+
++++++++++++++++++++++++++
+| 	Student		|
++++++++++++++++++++++++++
+|+ name 		|
+|+ age			|
+|+ grade		|
+|+ registrationClass	|
+|+ manager		|
++++++++++++++++++++++++++
+|+ getName		|
+|+ getAge		|
+|+ getGrade		|
+|+ getRegistrationClass	|
++++++++++++++++++++++++++
+
+

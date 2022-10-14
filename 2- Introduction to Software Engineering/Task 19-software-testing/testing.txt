@@ -1,0 +1,32 @@
+
+1. Why is it not necessary for a program to be completely free of
+defects before it is delivered to its customers? Explain your answer.
+
+
+2.Why can testing only detect the presence of errors, not their
+absence?
+A program is tested to determine if it can handle any out of the ordinary
+input from the users to ensure that it is able to recover from the
+error with little or no impact on any of its code or data.
+Validation testing is used for the purpose to show to the client that the
+program meets the requirements.
+
+3.Some people argue that developers should not be involved in
+testing their own code and instead, all testing should be the
+responsibility of a separate team. What are the pros and cons of
+testing being carried out by the developers themselves?
+Pros 
+
+
+
+Cons
+
+
+ 
+4.A common approach to system testing is to test the system until
+the testing budget is exhausted and then deliver the system to
+customers. Discuss the ethics of this approach to system testing.
+
+This approach is completely unethical as the client is in most cases left 
+with a program that does not function as intended which may lead to
+company information being deleted or left in a corrupt state.  

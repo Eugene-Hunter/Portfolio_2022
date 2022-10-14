@@ -1,0 +1,1 @@
+In this task, the program displays a 2 dimensional representation of a table or grid,a 5 row by 5 column grid. The program scans the 2D list in search of the '#'-symbol. If a # or 'bomb' is found, the fields that surround it keep count of the number of 'bombs' that surrounds each field.

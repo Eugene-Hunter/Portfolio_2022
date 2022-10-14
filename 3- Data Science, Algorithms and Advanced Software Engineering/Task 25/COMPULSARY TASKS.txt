@@ -1,0 +1,132 @@
+Processes versus Threads
+ 1> What is the difference between a process and a thread?
+Every process has at least 1 thread, but most likely it would contain many more, depending on what resources the application require to perform a task without interruption. threads only exists inside a process. Processes do not share memory space with other processes as each process operate in isolation. A thread is a small segment of the process and it has access to all the resources and information that is shared inside the process. 
+
+A thread's lifespan is limited to the the lifespan of the process it belongs to, and it may also be much shorter, relative to the application's use of this thread.  A thread is in essence the dedication of a segment of the CPU, RAM, non-volatile storage memory and other resources that a process uses to operate, in accordance to what the application was designed for.
+
+2> How do you create a thread in Java and run it?
+To create a thread, an instance of a thread needs to be instantiated in one of 2 ways:
+1: Provide a Runnable object. This object defines a single method called 'run'.
+The method of declaring a Runnable object is instantiated is by declaring it as an instance of the current class:
+	public class ThisDemoClass implements Runnable {.....
+In order to create a thread, the following declaration needs to be included in the first line inside of the process's main constructor method: 
+	(new Thread(new ExecuteRunnable())).start();
+2: Sublass Thread - the Thread class also has it's own 'Runnable' method, and it is implemented via subclassing by the application. Similar to the 'Runnable' object, it provides it's own implemetation of the 'run' method which is invoked as follows:
+	(new Thread(new ExecuteRunnable())).start();
+How the thread is created: inside the class, declare a method called run() and all the instructions that was programmed inside this method will be executed during the use of the thread.
+Example:
+  public void run() {
+        <Add your code here>.....
+    }	
+And that is it!
+
+3> What are the different states of a thread and when do the state transitions occur?
+A thread has one of several states, which are:
+
+New
+
+Ready
+
+Running
+
+Blocked
+
+Dead
+
+Waiting
+
+Sleeping
+
+The state transitions occur based on operational requirements. A new thread is created and its first state is the ready state. The transition to the run state occurs when the process calls on the run method.  From the running state, the transition is to the blocked state using input/output requests. As soon as the blocked state is no longer required, the thread transitions back to the ready state. The Running state transitions to the 'dead' state when the stop() function is executed, this also means that the thread is destroyed and any resources it may have been using, is released back to the process. To transition to the waiting state, the function 'wait()' is executed. The 'running' state can transition to the sleep state using the sleep() function. The 'sleeping' state pauses the processing that is taking place and this state can be interrupted as any time which causes the transition into the ready state.
+
+4> What is a daemon thread and what are its use cases?
+A daemon thread is a low-priority thread that performs background tasks such as 'garbage' collection and non-essential services for the application. 
+
+5> How do you create a daemon thread?
+To start a deamon thread, the following code should be added to the application:
+
+	Thread daemon = new Thread(() -> System.out.println("Deamon thread has now been created and is active")); 
+
+	daemon.setDaemon(true); 
+
+	daemon.start();
+
+6> What is Java Memory Model (JMM)?
+
+The Java Memory Model (JMM) defines the allowable behaviour of multithreaded programs, and therefore describes when such reordering's are possible. It places execution-time constraints on the relationship between threads and main memory in order to achieve consistent and reliable Java applications.[1]
+7> What are deadlock, livelock, and starvation? What causes these conditions?
+These terms are used to describe the liveness of a thread.
+
+Deadlock is when 2 or more threads execute simultaneously and in a permanent waiting state, waiting for one of the other threads in deadlock to exit it's state and signal that this thread can continue its execution of code.
+
+Where a thread is unable to access shared resources for long periods of time and the thread is unable to make progress. This is usually caused when other threads make the resources unavailable for long periods of time and the thread is then blocked from using the required resources.
+
+livelock may result when a thread often acts in response to the action of another thread. If the second thread's action is also a response to the action of another thread, then both threads come to a halt.  However, the threads are not permanently blocked like with a deadlock, and the rest of the application continues to function. The threads are in an endless loop of responding to the other threads response.
+
+8> What happens if you don’t override the thread class run() method?
+No output will be displayed and no code will be processed due to the fact that the Thread class instantiates an empty run() method.
+
+9> What is atomic operation and what are atomic classes in the Java
+Concurrency API?
+Those operations that always execute together is known as the atomic operations or atomic action. All the atomic operations either execute effectively happens all at once or it does not happen at all. 
+
+The atomic classes provide a lock-free and thread-safe environment or programming on a single variable.
+
+10> What are Executor and ExecutorService and what are the differences between them?
+Thread creation is a very resource-intense operation and it is suggested that an available thread be reused instead of starting a new thread every time, and we can achieve this using the Executor framework. 
+
+The Executor framework make use of thread pools to execute parallel running tasks, which helps to optimize overall response times and the effective utilization of system resources. It provides four types of built-in thread pools namely: Scheduled Thread Pool, Fixed Thread Pool, Single Thread Executor and  Cached Thread Pool. ExecutorService adds startup, shutdown, and the ability to wait for and look at the status of jobs you've submitted for execution on top of Executor (of which it is an extention).
+
+The Executor provides methods to manage termination of a thread and a method that can produce a 'Future' object, for tracking progress of one or more asynchronous tasks. 
+
+The Executor is the main interface which is an abstract class used for parallel execution. It manages the tasks separately from its execution. ExecutorService is an extension to the Executor interface and it provides a facility/method for returning a Future object. The ExecutorService can also terminate, or shut down the thread pool.
+
+11> What are Concurrent Collection Classes?
+Concurrent collection classes are meant for synchronized access to threads. Concurrent Collection classes are the API (application programming interfaces) in Java used for the concurrent operations which are added on in the existing collection APIs providing added feature of concurrent access using java.util.concurrent class. 
+
+Various features that are provided by concurrent collection classes are -
+
+
+The java.util.concurrent package includes a number of additions to the Java Collections Framework. These are most easily categorized by the collection interfaces provided:
+
+BlockingQueue defines a first-in-first-out data structure that blocks or times out when you attempt to add to a full queue, or retrieve from an empty queue.
+
+ConcurrentMap is a subinterface of java.util.Map that defines useful atomic operations. These operations remove or replace a key-value pair only if the key is present, or add a key-value pair only if the key is absent. Making these operations atomic helps avoid synchronization. The standard general-purpose implementation of ConcurrentMap is ConcurrentHashMap, which is a concurrent analog of HashMap.
+
+ConcurrentNavigableMap is a subinterface of ConcurrentMap which supports approximate matches. 
+
+CopyOnWriteArrayList is a thread-safe version of ArrayList
+
+CopyOnWriteArraySet
+
+All of these collections help avoid memory consistency errors by defining a happens-before relationship between an operation that adds an object to the collection with subsequent operations that access or remove that object.[2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+References:
+1) javatpoint.com: (Date unknown)'Process Vs. Thread | Difference Between Process and Thread' Date unknown. Available  at: https://www.javatpoint.com/process-vs-thread(Accessed 12 September 2022)
+2)httpsinterviewpreparationblog.blogspot.com/ (Date unknown)'What are the different states of a thread and when do the state transitions occur?' Date unknown. Available at: https://httpsinterviewpreparationblog.blogspot.com/2022/08/what-are-different-states-of-thread-and.html(Accessed 12 September 2022)
+3)www.geeksforgeeks.org: (07 Dec, 2021)'Daemon Thread in Java' Dec, 2021. Available at: https://www.geeksforgeeks.org/daemon-thread-java/
+4) httpsinterviewpreparationblog.blogspot.com(30 Aug 2022)'What is the Java Memory Model (JMM)?' Aug, 2022. Available at: [1] https://httpsinterviewpreparationblog.blogspot.com/2022/08/what-is-java-memory-model-jmm.html(Accessed 12 September 2022)
+5) wikipedia.org: (1 Apr 2022)'Java memory model' Apr, 2022. Available at: https://en.wikipedia.org/wiki/Java_memory_model(Accessed 12 September 2022)
+6)geeksforgeeks.org: (8 Apr 2022)'Deadlock, Starvation, and Livelock' Apr, 2022. Available at: https://www.geeksforgeeks.org/deadlock-starvation-and-livelock/(Accessed 12 September 2022)
+7)httpsinterviewpreparationblog.blogspot.com: (30 Aug 2022)'Concurrency Questions','What is deadlock, livelock, and starvation? What causes these conditions?' Aug, 2022. Available at: https://httpsinterviewpreparationblog.blogspot.com/2022/08/what-is-deadlock-livelock-and.html(Accessed 12 September 2022)
+8)[Unknown Author: (2017)'Article','Blog name' day, month. Available at: https://interviewsansar.com/must-override-run-method-in-java/(Accessed 12 September 2022)
+9)Question answered by Aasif Faheem Ansari: (17 Feb 2014)'What is atomic operation? What are atomic classes in Java Concurrency API?', Feb, 2014. Available at: https://specialties.bayt.com/en/specialties/q/68973/what-is-atomic-operation-what-are-atomic-classes-in-java-concurrency-api/(Accessed 12 September 2022)
+10)javatpoint.com: (Unknown Date)'Java Atomic' Unknown Date. Available at: https://www.javatpoint.com/java-atomic(Accessed 12 September 2022)
+11)www.tutorialspoint.com: (Unknown Date)'Difference between Executor and ExecutorServices in Java' Date unknown. Available at: https://www.tutorialspoint.com/difference-between-executor-and-executorservices-in-java(Accessed 12 September 2022)
+12) httpsinterviewpreparationblog.blogspot.com: (2017)'Concurrency Questions','What are Concurrent Collection Classes? ' Aug, 2022. Available at: [2] https://httpsinterviewpreparationblog.blogspot.com/2022/08/what-are-concurrent-collection-classes.html(Accessed 12 September 2022)
+13) javatrainingschool.com: (Date unknown)'Concurrent Collections in Java' Date unknown. Available at: [2] https://javatrainingschool.com/concurrencollections/(Accessed 12 September 2022)
+14) Sudipta (11 Feb 2019)'What is a daemon thread, what are its use cases?' Feb,2019 Available at:  https://github.com/Sudipta13samanta/Concurency/wiki/3.-What-is-a-daemon-thread%2C-what-are-its-use-cases%3F(Accessed 12 September 2022)

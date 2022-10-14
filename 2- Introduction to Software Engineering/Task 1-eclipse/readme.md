@@ -1,0 +1,1 @@
+The task entailed the introduction and setup of the Eclipse software.

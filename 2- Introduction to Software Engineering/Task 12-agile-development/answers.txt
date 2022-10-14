@@ -1,0 +1,15 @@
+ Reread “Agile Manifesto”. Can you think of a situation in which one or
+more of the four “values” could get a software team into trouble?
+Q 1 Describe agility in your own words.
+	Agility is another word for swiftness, the ability to adapt almost instantly, moldable, plyable
+
+Q 2 Why do you think requirements change so much?
+	technology changes so fast, also better and improved ways of doing things, along with trends and styles, which
+	influences how the market develop. The criminal factor grows by the hour, thus, to outsmart the criminal factor,
+	constant updates to stay one step ahead is needed.
+
+Q 3 Explain why test-first development helps the programmer to develop a
+better understanding of the system requirements
+	It gives developers a better understanding as to what the function they are on the process of creating
+	is supposed to do and the type of errors that users may encounter. It also limits scope creep to a large extent
+	as the focus would be on solving the problems and to not do work that is not appearing on the story board.

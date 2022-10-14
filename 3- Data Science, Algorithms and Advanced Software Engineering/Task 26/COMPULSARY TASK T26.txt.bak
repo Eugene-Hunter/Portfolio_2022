@@ -1,0 +1,69 @@
+Java Interfaces and Abstract Classes 
+1>What is an interface in Java and why would you, as a software developer, use interfaces?
+Interfaces are perceived as the blueprints of classes. It only allows for  static and final constants(attributes) and abstract(empty) methods to be declared, and as from Java v.8, interfaces is able to host static and default methods, and as from v.9, an interface can host private methods. The main reasons why a developer should use interfaces are 3-fold: 1, to achieve abstraction; 2, it allows for multiple inheritance which would otherwise not be possible; 3, to achieve loose coupling between classes. 
+
+2> What is the difference between an abstract class and an interface?
+An abstract class is extended class which means that all the classes that devices from it, inherits all the methods and attributes. The derived class  must override all the methods from the abstract class. Abstract classes can have implemented methods and may have private or protected members, while interface members are public by default. Abstract classes usually contain some partially implemented code or some protection around its members. 
+
+An interface is implemented. It contains the infrastructure for classes to implement and contains no instructional code.
+
+All interface variables are static and final, abstract classes may have non-final, non-static variables
+
+Interfaces can only extend other interfaces, abstract classes may implement multiple interfaces and extend other classes
+
+Interfaces are “total abstractions”. Interfaces can be seen as the black boxes for classes, as it hides the code from the viewer. Interfaces do not implement any methods, instead, they only define what they are. All the members of an interface are public by default, that’s because interfaces are used to define how an object can be interacted with.
+
+3> Why is abstraction an important concept in software development and what role do interfaces play in abstraction?
+Abstraction hides the unnecessary programming details from the users. It helps in reducing programming complexity and efforts. Abstraction is important factor for software encapsulation and loose coupling. 
+
+4> What must a class do in order to implement an interface?
+To declare a class that implements an interface, you include an implements clause in the class declaration. Your class can implement more than one interface, so the implements keyword is followed by a comma-separated list of the interfaces implemented by the class. By convention, the implements clause follows the extends clause, if there is one.
+
+5> What is an abstract method?
+An abstract method is a method that is declared without an implementation (without braces, and followed by a semicolon). Abstraction refers to as act of representing essential features without including any details.
+
+6> Can you instantiate an interface?
+No, an interfaces does not contain a constructor method which is necessary for instantiations of objects.
+
+7> Can you declare a constructor inside an interface? If not, why?
+No, An interface cannot have constructor in java as it does not have a constructor and it can therefore not call on a super class (parent class)  so nothing to construct.
+
+8> Can we override an interface method with visibility that is not public?
+No
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES 
+
+1)https://www.simplilearn.com/tutorials/java-tutorial/java-interface
+
+2)https://www.tutorialspoint.com/what-is-the-purpose-of-interfaces-in-java
+
+3)https://www.tutorialspoint.com/What-are-the-differences-between-a-class-and-an-interface-in-Java
+
+4)https://www.javatpoint.com/interface-in-java
+
+5)https://medium.com/plain-simple-software/whats-the-difference-between-an-interface-and-an-abstract-class-d1fe50338325
+
+6)https://malariafacts.com/?s=+What+must+a+class+do+in+order+to+implement+an+interface%3F
+
+7)https://stackoverflow.com/questions/15997567/can-you-instantiate-an-interface-in-java
+
+8)https://docs.oracle.com/javase/tutorial/java/IandI/usinginterface.html
+
+9)https://www.w3schools.blog/constructor-in-interface-java
+
+10)https://stackoverflow.com/questions/56685091/can-we-override-an-interface-method-with-visibility-that-is-not-public
+
+11)https://httpsinterviewpreparationblog.blogspot.com/2022/08/what-are-concurrent-collection-classes.html
+

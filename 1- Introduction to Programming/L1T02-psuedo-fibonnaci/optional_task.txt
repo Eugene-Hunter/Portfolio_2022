@@ -1,0 +1,42 @@
+Optional task
+
+ask user for a number
+
+Ask user to input number and type cast value to integer
+store number in variable 
+create fibonacci list and declare first 2 numbers, 0 and 1
+create count variable for number of iterations and initialise with the number 2 
+to allow user to enter a value more than once  loop code with while statement
+		for n in value range -2
+		new_value = current position - 2 + current posistion - 1
+		append new_value to the list
+		increment count + 1 
+	print fibonacci list
+	clear fibonacci	list
+	initialise first 2 values, 0 and 1
+	reset count variable to 2
+	ask user to enter new value and loop  the while code or type -1 to exit
+else exit program
+
+
+
+code below:
+
+value = int(input("Enter a value: "))
+
+fibonacci = [0,1]
+count = 2
+while value != -1:
+        for n in range(value-2):
+                fibonacci.append(fibonacci[count - 1] + fibonacci[count -2])
+                count +=1        
+        print(fibonacci)
+        fibonacci.clear()
+        fibonacci = [0,1]
+        count = 2
+        value = int(input("Enter a value, -1 to exit: "))
+else:
+        exit()
+
+
+

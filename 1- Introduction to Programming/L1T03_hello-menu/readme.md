@@ -1,0 +1,1 @@
+FOr this task a simple cafe menu was developed

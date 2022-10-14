@@ -1,0 +1,60 @@
+What are the differences between supervised and unsupervised machine
+learning? Explain what you think semi-supervised machine learning is.
+1- Unsupervised learning: trains on unlabeled data. The algorithm scans sets of data for meaningful connections.
+2- Supervised learning: uses labeled data and define the variables the data scientist wants to assess for correlation.
+Semi-supervised learning: The data scientists uses a mix of the unsupervised and supervised learning types. It normally 
+combines a small amount of labeled data with a large amount of unlabeled data.
+
+- Write a paragraph on Machine Learning. Try to use your own words
+(about 8 sentences)
+Machine Learning is software's ability to analyze stored information  (historical data)
+and compare the information in part or as a whole, and derive calculated 
+conclucions from algorithms.
+From these conclusions, predictions can be
+made which the software can use to highlight possible changes in the 
+current markets for instance.
+The software in turn, and in real-time, take all
+the new information that had been received and re-evaluate the predicted outcome
+and repeats the process over again. 
+The interesting fact is that the software applications are designed in
+such a way that it makes these predictions without human intervention.
+Machine learning can be categorized into 4 different types of approaches:
+1- Unsupervised learning: trains on unlabeled data. The algorithm scans sets of data for meaningful connections.
+2- Supervised learning: uses labeled data and define the variables the data scientist wants to assess for correlation.
+3- Semi-supervised learning: The data scientists uses a mix of the unsupervised and supervised learning types
+4- Reinforcement learning: the software completes a multi-step process for which there are clearly defined rules.
+
+
+- Write a paragraph on Supervised Learning. Try to use your own
+words (about 5 sentences). Also, list at least 4 models in Supervised
+Learning.
+-Supervised Learning maps input to an output based on example input-output pairs and each example is a pair consisting 
+of an input object (a.k.a vector) and a desired output value 
+(a.k.a supervisory signal).
+There are 2 types of supervised learning: regression and classification,
+The supervised algorithm analyzes the labeled training data from various data training sets and produces a generalized
+function which can be used for generating/mapping future examples.
+There are 4 major issues to take note of.
+1. Bias-variance tradeoff
+2. Function complexity and amount of training data
+3. Dimensionality of the input space
+4. Noise in the output values
+4 Supervised learning models: linear regression, logistic regression, decision trees, k-nearest neighbor algorithm
+
+- Write a paragraph on Unsupervised Learning. Try to use your own
+words (about 5 sentences). Also, list at least 2 models in
+Unsupervised Learning.
+-Unsupervised learning is an algorithm that learns patterns from untagged data, making use of mimicry to generate new content
+based on a compact internal representation of the environment the machine is a part of.
+-Unsupervised learning methods makes use of self-organization that captures patterns as probability densities, 
+or a combination of neural feature preferences.
+2 Unsupervised learning models: Probabilistic and neural networks methods
+
+- Write a paragraph on 1 interesting trend in Artificial Intelligence
+that interests you. E.g. self-driving cars, music production, voice
+recognition, handwritten signature verification, computational
+biology, etc
+
+Self-driving cars is definitely a technological advancement to look forward to, to the day that all cars are no longer
+controlled by humans and the road accident rate is almost non-existent. We are still a few years away from that day,
+but the possibility is slowly becoming a reality. 

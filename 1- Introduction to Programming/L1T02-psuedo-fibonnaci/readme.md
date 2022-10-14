@@ -1,0 +1,1 @@
+For this task, I developed a fibonacci calculator and used psuedocode to complete the exercises.

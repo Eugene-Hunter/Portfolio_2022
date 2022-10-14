@@ -1,0 +1,10 @@
+5 chances to 2 numbers
+start time is taken to see how long it took the user to complete the 5 deduction questions
+The program swaps the variables if the second variable is greater than the first
+If answer is correct, the user gets a correct mark 
+if the answer is incorrect, the users gets an incorrect mark
+stop time is recorded to see how long it took the user to complete the 5 deduction questions
+Results are displayed
+
+The output is the deduction calculation answers and the time it took to complete the 5 questions.
+It also shows all the questions and which answers the user had correct and incorrect 

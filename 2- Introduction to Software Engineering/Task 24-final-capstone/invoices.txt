@@ -1,0 +1,4 @@
+1;2022-02-20;CL1;Eugene Hunter;083 2541 245;gnyhunter@gmail,com;16 Lovers Lane, George, 6142;P0001;Hunter Residence;24 Hill Street, George;D21485;2023-01-01;2600000.0;800000.0;1800000.0;false
+2;2022-06-01;CL2;George Orwell;081 5482 154;georgeorwell@gmail,com;21 Mermaid Blvd, George, 6142;P0002;Animal Farm;13 Equestrian Road, George, 6142;D41010;2022-07-01;2000000.0;1000000.0;1000000.0;false
+3;2022-07-20;CL1;Metro Park Trust;0116742541;ceo@mpt.co;45 Metro Park,West Street,Kanonkop,8421;P0001;Hunter Residence;24 Hill Street, George;D21485;2023-01-01;2600000.0;800000.0;1800000.0;false
+4;2022-07-27;CL4;Donovan Bradley;+77 7 777-777-777;seven-seven-seven@mheaven-on-earth.hvn;77, Seventh Heaven, Pearly-gates Lane, Heaven, 777;PR4;Potter House;45 Malcolm Road, Pietersburg, 2214;K254781;2022-05-07;2550000.0;850000.0;1700000.0;false

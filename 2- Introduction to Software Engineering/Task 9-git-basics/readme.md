@@ -1,0 +1,1 @@
+For this task I created branches in git by creating an initial submit and by pushing it to upload and merge with the master branch, using the command line interface.

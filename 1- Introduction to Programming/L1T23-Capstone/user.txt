@@ -1,0 +1,10 @@
+admin, adm1n
+jerry, f3rry
+jenny, jock
+nick, halsted
+john, worthog
+kerry, pink
+james, platinum
+kylie, matchstick
+charl, programmatic
+sage, pacific

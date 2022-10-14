@@ -1,0 +1,32 @@
+Create a text file called databases.txt where you will answer the following questions.
+Explain the difference between data and information.
++ Data is the idividual pieces of text and figures which normally is collected in sets
++ Information is data that is converted to have meaning by means of analyzing and interpretation of the data.
+
+Research “sparse data”. What is the alternative? What are the differences
+between the two?
++ The alternative is dense data
++ Sparse data is data that contains mostly zeros (empty fields) and few non-zero entities/fields while dense data is data with mostly non-zero entries
+
+Research and list 3 relational DBMSes and 3 NoSQL DBMSes.
+Relational DBMSes
++ MySQL
++ MongoDb
++ MS Access
+
+NoSQL DBMSes
++ Apache Cassandra
++ Oralce NoSQL Database
++ Hypertable
+
+Look up “transaction consistency”. Describe it in your own words.
++ Transaction consistency guarantees that all in-scope operations of the target database will be regarded as to have been committed in the instance where 
+  only a part of the transaction has been committed. All the read locks that are active will remain active until the transaction is completed. This provides a
+  consistent view of the database and is the highest isolation level that guarantees that the transaction has a consistent view of the database.
+
+Given the file below, answer the following questions:
+
+How many records does the file contain?
++ 4
+How many fields are there per record?
++ 5

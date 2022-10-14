@@ -1,0 +1,38 @@
+-- Do some research to find real-world examples of when each architecture pattern would be most appropriate to use.
+-- Write down your examples and state your reasons why each pattern would be most appropriate for each of the examples you found.
+
+
+Layered Architecture is very useful in the following examples:
+	Control system for a self-driving vehicle
+	Home banking websites
++ It allows the enitre system to work as 1 unit to process the requests received from the user/system/object. 
++ Updating any of the different layers in the architecture won't have any effect on the rest of the layers.
+
+Repository Architecture is used in:
+	DBMS systems
+	Web architecture
++ Repository architecture is best used when many devices use the same set of data/information which modify the data/information. It makes use of a centralized
+  database to store the information.. 
++ The information is made available to all the users or agents once the information has been committed. 
+
+Client-Server Architecture is commonly used in:
+	ERP Software
+	Web architecture
++ Use client-server software when the users use different devices and when you need to encapsulate system functionalities
++ When data integrity is required.
++ When scalability and reusability of agents are needed.
+
+
+Pipe and Filter Architecture is mainly used in:
+	Unix shell scripts and compilers
++ Pipe and filter architecture can be used for breaking down large/complex sets of processes into multiple steps. It can run multiple steps simultaneously
+  and produce all the data required for the final outcome practically all at once. It can also improve performance, scalability and reusability by allowing
+  the elements performing these processing, to be deployed and scaled independently.
+
+--Give two examples of systems combining two or more patterns, and
+explain why you chose these examples.
+1. Layered Architecture, Client-Server Architecture and Repository Architecture - this combination is prevalent in many B2B and B2C websites which allows multiple users 
+   to access the same content simultaneously. It also allows for the individual processes to be encapsulated and separated from one another.
+2. Client-Server Architecture, Pipe and Filter Architecture and Repository Architecture - this combination is useful when large files (example globs and vlobs) are processed 
+   that requires alot of processing power and storage space. The client-server architecture also makes it possible for a multitude of users accessing the same information
+   simultaneously.

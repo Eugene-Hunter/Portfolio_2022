@@ -1,0 +1,20 @@
+Finance calculator readme.
+
+The finance calculator can be used to calculate the total cost of a bond repayment as well as calculating the return on an investment in terms of interest.
+
+The user is asked to choose between these 2 options and to enter values pertaining to the option.
+
+Return on investment calculation:
+- The user is asked to provide deposit amount, the yearly interest rate, the investment period in years, and whether he/she wants to calculate the standard or compound interest.
+- For calculating the interest using the simple interest rate, the formula A = P * (1 + rt) is used, and  for calculating the interest using the formula A = P * (1 + r)^t.
+- The result is displayed in the local currency, the Rand
+
+Bond repayment calculation: 
+- To calculate the bond repayment, the users is asked to enter the value of the home  loan, the yearly interest rate, the repayment period in terms of months. 
+- The formula used to calculate the repayment amount per month is : X = (i * P) / (1 - (1 + i)^(-n)).
+
+The result is displayed in the local currency, the Rand
+         
+The program may experience errors in terms of input due to time constraints and will be addressed in future updates of the software.
+
+   

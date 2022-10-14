@@ -1,0 +1,7 @@
+admin, adm1n
+jerry, f3rry
+jenny, jock
+kate, kennedy
+john, speckels
+marlin, magical
+kent, brent

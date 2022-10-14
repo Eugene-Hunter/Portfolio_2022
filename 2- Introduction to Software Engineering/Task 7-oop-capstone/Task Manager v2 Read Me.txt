@@ -1,0 +1,54 @@
+This file contains the readme of version 1 and version 2 , which is an update from the earlier version 1 of the Task Manager program.
+Version 1:
+The Task Manager software is intended to replicate an tasks manager system that allows multiple users to gain access to the their individual profiles and to send an add and deleted assigned tasks. 
+
+The users start by running the task_manager.py file and is greeted with the login screen. The user is then required to enter their unique username and password in order to gain access to the options menu. The program confirms the username and password and if either or both is incorrect, and the user is requested to re-enter the information.
+
+If the user does not have a profile, the administrator is the person to create a new profile for the user and the information is stored in the program's database files. The administrator have additional access to functions that the normal users do not such as viewing the statistics of the number of users, the number of tasks that is stored in the database.
+
+Once the user was successful in logging in, the options menu is displayed and the user can do any of the following tasks:
+- Register a user (Administrator only)
+- Add a task
+- view all tasks
+- View personal tasks
+- View statistics (Administrator only)
+
+The different menu options are as follows:
+- Registering a new User (Administrator only)
++ The adminstrator is requested to enter the new user's username which is first compared to the existing database to check if the name is not already in use. If the   name already exist in the database, the administrator is requested to enter a different name and the program will continue to do so until the username has not been     found in the database.
++ The administrator is requested to enter the password and to confirm the password. If the passwords do not match, the adminsitrator must re-enter the password and the   confirm password until it matches. If successful, the new user profile has been created and the user can log in using these credentials.
+ 
+- Adding a Task (All users)
++ The user selects the option from the menu to a new task.
++ The user is requested to enter the username of the person responsible for the completion of the task. The name is compared to the usernames that are registered in   the program's database and if the name matches, the program moves on to the next question. If the name does not appear in the database, the user is requested to   enter a different username until it matches a name in the database.
++ The user is requested to enter; a title for the task, the due date of the task, whether the task has been completed or not, and a description of actions that needs   to be taken to complete the task. 
++ User is able to add more than 1 task.
++ The newly created task(s) is stored in the file.
+
+- Viewing a Task (All Users)
++ The user selects this option and all the tasks stored in the database are displayed on the screen.
+
+- Viewing Personal Taks (All Users)
++ The user selects this option to filter the tasks stored in the database to limit the output to only tasks which the user is responsible for.
+
+- View Statistics (Administrator Only)
++ The administrator selects this option to view how many tasks are assigned to each users and the number of users.
+        
+
+Version 2:        
+- The following features have been added with this udpate:
+    
+- The user is now able to update an existing file's information and mark a task as completed.
+
+- Once a task was marked as completed, the information can then no longer be changed/updated . 
+
+- A user can edit the task by reassigning it to someone else, edit the title, the description, the due date, or decide to cancel the update.          
+
+- The adminstrator can now create reports that display the statistical information for each of the users and the tasks assigned to them.
+
+- The administrator can now read statistics for each user, such as total task count, total completed tasks count, total incomplete tasks count, total taks overdue,
+  the percentage of incomplete tasks, and the percentage of overdue tasks.
+
+
+
+

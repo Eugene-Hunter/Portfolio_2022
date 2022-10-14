@@ -1,0 +1,7 @@
+CL1;Eugene Hunter;Client
+CL2;George Orwell;Client
+CO1;Jack Pratt;Contractor
+CO2;Harry Porter;Contractor
+AR1;John McKinley;Architect
+CL3;Metro Park Trust;Client
+CL4;Donovan Bradley;Client

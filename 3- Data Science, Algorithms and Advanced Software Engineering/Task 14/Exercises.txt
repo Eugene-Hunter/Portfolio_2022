@@ -1,0 +1,29 @@
+I
+Briefly describe possible standards that might be used for these real-world
+products:
+1.Soap - Quality, Efficiency, Fragrance, Safety
+2.Aeroplane - Reliability, Safety
+3.Curry - Quality, Safety
+
+II
+Explain why a high-quality software process should lead to high-quality
+software products. Discuss possible problems with this system of quality
+management.
+A high-quality software process takes as many of the software quality standards into account as possible.
+It becomes time-consuming and costly to address all the problems and a QM team is needed to limit and focus
+on the problems based on severity of the problems.
+
+
+III
+Explain why program inspections are an effective technique for
+discovering errors in a program. What types of errors are unlikely to be
+discovered through inspections?
+It provides a second/third  quality check of the code for common errors or problems. Other anomalies can
+also be detected. It will not be able to discover logical errors as logical errors are based on calculation
+formulas created in the minds of humans and is not able to predict what the calculations are to be used for.
+
+IV
+Why is it difficult to validate the relationships between internal product
+attributes and external attributes?
+It is difficult to validate the relationships as the validations are based on the user's or developer's
+experience with the product.

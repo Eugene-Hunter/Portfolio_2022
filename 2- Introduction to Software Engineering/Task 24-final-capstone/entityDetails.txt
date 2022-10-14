@@ -1,0 +1,7 @@
+CL1;<0>;<0>;16 Lovers Lane;George;6142;gnyhunter@gmail.com;0702357894;null;null;false
+CL2;<0>;<0>;21 Mermaid Blvd;George;6142;gnyhunter@gmail.com;0702357894;null;null;false
+CO1;25;<0>;Redberry Farm;George;6142;jackp@poised.com;0614572154;null;null;false
+CO2;<0>;<0>;15 Jerryatrix Road;George;6142;harryp@poised.com;0614572154;null;null;false
+AR1;64;Sunny-Hill Estate;Sunny Street;George;6142;johnmk@poised.com;0752451021;null;null;false
+CL3;45;Metro Park;West Street;Kanonkop;8421;ceo@mpt.co;0116742541;null;null;false
+CL4;77;Seventh Heaven;Pearly-gates Lane;Heaven;777;seven-seven-seven@mheaven-on-earth.hvn;+77 7 777-777-777;null;null;false

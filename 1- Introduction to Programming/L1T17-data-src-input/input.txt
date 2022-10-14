@@ -1,0 +1,25 @@
+Create a new text file in this folder called input.txt.
+In the input.txt file enter some text, making sure it is at least a few lines long.
+Write a program that will count the number of characters, words and lines in the file.
+Your program should also count the total number of vowels (a, e, i, o and u) in the file.
+Print out your results.
+Create a new text file in this folder called input.txt.
+In the input.txt file enter some text, making sure it is at least a few lines long.
+Write a program that will count the number of characters, words and lines in the file.
+Your program should also count the total number of vowels (a, e, i, o and u) in the file.
+Print out your results.
+Create a new text file in this folder called input.txt.
+In the input.txt file enter some text, making sure it is at least a few lines long.
+Write a program that will count the number of characters, words and lines in the file.
+Your program should also count the total number of vowels (a, e, i, o and u) in the file.
+Print out your results.
+Create a new text file in this folder called input.txt.
+In the input.txt file enter some text, making sure it is at least a few lines long.
+Write a program that will count the number of characters, words and lines in the file.
+Your program should also count the total number of vowels (a, e, i, o and u) in the file.
+Print out your results.
+Create a new text file in this folder called input.txt.
+In the input.txt file enter some text, making sure it is at least a few lines long.
+Write a program that will count the number of characters, words and lines in the file.
+Your program should also count the total number of vowels (a, e, i, o and u) in the file.
+Print out your results.

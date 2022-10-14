@@ -1,0 +1,4 @@
+PR1;Hunter Residence;Residence;24 Hill Street, George;D21485;2021-01-02;2022-05-07;AR1;CO1;CL1;false;false;false
+PR2;Animal Farm;Business;13 Equestrian Road, George;D41010;2021-04-01;2023-07-01;AR1;CO2;CL2;false;false;false
+PR3;Park Trust Building project;Business;147 Aalwyn Street, King, 2521;Z12547;2022-08-01;2028-02-01;AR1;CO1;CL3;false;false;false
+PR4;Bradley House;Residence;45 Malcolm Road, Pietersburg, 2214;K254781;2022-09-01;2023-08-30;AR1;CO2;CL4;false;false;false

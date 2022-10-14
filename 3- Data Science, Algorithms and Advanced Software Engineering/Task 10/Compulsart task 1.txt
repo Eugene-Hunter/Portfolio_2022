@@ -1,0 +1,38 @@
+(Q1)  What is the Big-O notation of the following algorithm (assume that all
+variables have been declared):
+for (int i=1; i<= n; i++)
+sum = sum + i * (i + 1);
+== sum + i^2 + i
+== O(1)
+
+(Q2) What is the Big-O notation of the following algorithm (assume that all
+variables have been declared):
+for (int i = 5; i <= 2 * n; i++)
+System.out.println(2 * n + i - 1);
+== 2n + i - 1
+==O(n)
+
+(Q3)What is the Big-O notation of the following algorithm:
+for (int i = 1; i <= 2 * n; i++)
+for (int j = 1; j <= n; j++)
+System.out.println(2 * i + j);
+System.out.println(“ “);
+== (2i + j^n)
+==j^n
+
+(Q4)What is the Big-O notation of the following algorithm:
+for (int i = 1; i <= n; i++)
+for (int j = 1; j <= n; j++)
+for (int k = 1; k <= n; k++)
+System.out.println(i + j + k);
+== (i + j^2 + k^3)
+==O(k^3)
+
+(Q5)Each of the following expressions represents the number of inputs for
+certain algorithms. Write them in Big O notation (e.g, n + 2 -> O(n)):
+n^2 + 6n + 4 = O(n^2)
+5n^3 + 2n + 8 = n^3
+(n^2 + 1)(3n + 5) = (n^2 * 3n) + (n^2 + 5) + (1 * 3n) + (1* 5) == 3n^3 + n^2 + 3n + 5 == O(n^3)
+5(6n + 4) = O(n)
+n + 2log(2)n - 6 =n + 2 * n^2 - 6 == 4n - 6 == O(n)
+4nlog(2)n + 3n + 8 = 4 * n * 2n + 3n + 8 = 4 + 5n + 8 == O(n)

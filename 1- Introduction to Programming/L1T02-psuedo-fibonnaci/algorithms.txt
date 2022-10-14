@@ -1,0 +1,14 @@
+1)
+request user to input name
+store input string in variable first_name
+print first_name and "Hello, World"
+
+2)
+request age from user
+store number in variable age
+if age >= 18
+	print message "You're old enough."
+if age == 16 or age == 17
+	print message "Almost there."
+else
+	print "You're just too young."

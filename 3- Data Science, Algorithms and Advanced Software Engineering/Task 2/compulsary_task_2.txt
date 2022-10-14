@@ -1,0 +1,38 @@
+
+Go to this website. Do you think the website has a good UI? Why or why
+not? Refer to the information given in the task and discuss both good and
+bad elements in the website’s UI.
+
+This website does not have a great user interface according to today's standards.
+The website was designed with a very select audience in mind, being radiographers. 
+Good elements:
+It contains all the information required in order to allow the user to gain the necessary knowledge of the products which the company are selling.
+The customers are welcomed to a list of links to popular products that's on sale.
+The website is easy to navigate for experienced users and users have grown accustomed to the same user interface since its inception in 1997.
+The website is extremely cost-effective to maintain.
+
+Bad elements:
+The website is not secure. On practically any other website this might be considered a problem, but because there is no login page there is no need to
+have the website secured.
+The pictures are not of equal proportions.
+Too much whitespace make the site look unappealing. 
+The users cannot make online payments
+The menu list does not appear on the index page, it makes it therefore difficult to see what all products are on sale.
+There is no information available regarding the directors
+The text colors are conflicting with the background colours which makes the text hard to read at times
+
+Now go to this website. Do you think the website has a good UI? Why or
+why not? Refer to the information given in the task and discuss both good
+and bad elements in the website’s UI.
+The website has a good user interface.
+
+This website was designed to cater for a large audience and modernised its look to fit in with the colour schemes and shapes that are prevalent in today's society.
+
+Good elements:
+The user interface comes across as stylish and balanced in terms of font usage and picture sizes.
+The website does not appear to be overcrowded as there is plenty of whitespace 
+	
+Bad elements:
+The part of the menu that is not in view are difficult to reach as there is no slider bar that allows the user to scroll down , 
+for instance where a notebook mousepad is the only means to scroll up or down it is practically impossible to traverse the page.
+This website is much more expensive to maintain in comparison to the previous one as a graphic designer was/is involved.

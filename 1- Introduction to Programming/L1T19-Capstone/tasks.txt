@@ -1,0 +1,7 @@
+Admin, Register Users with taskManager.py, Use taskManager.py to add the usernames and passwords for all team members that will be using this program., 10 Oct 2019, 20 Oct 2019, No
+Admin, Assign initial tasks, Use taskManager.py to assign each team member with appropriate tasks, 10 Oct 2019, 25 Oct 2019, No
+Jenny, functions, Functions training at 9AM! don't miss it., 15 Mar 2022, 06 Jun 2022, no
+Jenny, loops, Loops training at 3PM! be sure not to miss it., 15 Mar 2022, 06 Jun 2022, no
+Jenny, objects, Objects training at 12PM! be sure not to miss it., 15 Mar 2022, 06 Jun 2022, no
+Jerry, Think Tank Thursday, Please join us on this day for a think tank Thursday. , 24 Mar 2022, 09 Jun 2022, no
+Jerry, Code-Athon, Code-athon held on this day. put on your thinking cap and join us, 25 Mar 2022, 14 May 2022, no

@@ -1,0 +1,9 @@
+admin, Register Users with taskManager.py, Use taskManager.py to add the usernames and passwords for all team members that will be using this program., 10 Oct 2019, 20 Oct 2019, No
+admin, Assign initial tasks, Use taskManager.py to assign each team member with appropriate tasks, 10 Oct 2019, 25 Oct 2019, Yes
+jenny, functions, Functions training at 9AM! don't miss it., 15 Mar 2022, 01 Apr 2022, No
+james, loops, Loops training at 3PM! be sure not to miss it., 15 Mar 2022, 06 Jun 2022, Yes
+kerry, objects, Objects training at 12PM! be sure not to miss it., 15 Mar 2022, 06 Mar 2022, No
+john, Weekly Tasks, Please finanlise all your weekly tasks before the deadline., 26 Mar 2022, 01 Jul 2022, Yes
+john, Tuples, Tuples training at 3PM! Be sure not to miss it., 26 Mar 2022, 01 Apr 2022, No
+sage, Rectify Error In Code, Please rectify the error in line 176 - 179 of your code., 11 Apr 2022, 12 Apr 2022, no
+kylie, Waiting For A Response, Your assignment was marked and your response is required. Please finalise before the due date., 11 Apr 2022, 17 Apr 2022, no

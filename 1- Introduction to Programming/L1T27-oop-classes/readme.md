@@ -1,0 +1,3 @@
+In this task, the program developed makes use of object oriented programming.
+
+The email program instantiates an Email class along with its methods and attributes. Information is retrieved from a file that resembles emails, stores it in lists and displays in inbox with a list of options from which the user can choose from. The user can view the emails or send an email. The emails are formatted to display in a custom table. If the user reads an email, the email is marked as being read. The user also has the ability to mark an email as spam and the email will appear in the spam box. The user can also delete any emails.  

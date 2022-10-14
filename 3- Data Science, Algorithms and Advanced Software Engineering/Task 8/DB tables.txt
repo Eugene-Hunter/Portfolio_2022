@@ -1,0 +1,168 @@
+
+
+DROP TABLE Invoice;
+DROP TABLE ProjectInfo;
+DROP TABLE ProjectFinances;
+DROP TABLE Project;
+DROP TABLE Receipt ;
+DROP TABLE EmployeeInfo;
+DROP TABLE Entity;
+DROP TABLE PostalDetails;
+DROP TABLE Positions;	
+
+############################
+CREATE TABLE Positions(
+abbreviate varchar(3),
+description varchar(75),
+department varchar(75),
+CONSTRAINT Positions_PK PRIMARY KEY (abbreviate)
+);
+############################
+CREATE TABLE PostalDetails(
+postalCode varchar(4),
+city varchar(75),
+province varchar(75),
+country varchar(75),
+CONSTRAINT Postal_PK PRIMARY KEY (postalCode)
+);
+############################
+CREATE TABLE Entity(
+entityCode varchar(4),
+entityName varchar(75),
+complexDetails varchar(75),
+streetAddress varchar(75),
+postalCode varchar(4),
+email varchar(254),
+contactNumber varchar(12), 
+archiveEntity tinyInt(1),
+recordDate date,
+entityType varchar(1), 
+CONSTRAINT Entity_PK PRIMARY KEY (entityCode),
+CONSTRAINT Entity_postal_FK FOREIGN KEY (postalCode) REFERENCES PostalDetails(postalCode)
+);
+############################
+CREATE TABLE EmployeeInfo(
+employeeCode varchar(4),
+employStartDate date,
+employEndDate date,
+DOB_ID varchar(13),
+position varchar(3),
+Salary float,
+CONSTRAINT EmployeeInfo_FK FOREIGN KEY (employeeCode) REFERENCES Entity(entityCode),
+CONSTRAINT EmployeeInfo_Position_FK FOREIGN KEY (position) REFERENCES Positions(abbreviate)
+);
+############################
+CREATE TABLE Project(
+projectCode int Auto_Increment,
+projectName varchar(50),
+clientCode varchar(6),
+architectCode varchar(6),
+contractorCode varchar(6),
+managerCode varchar(6),
+CONSTRAINT Project_PK PRIMARY KEY (projectCode),
+CONSTRAINT Project_Entity_client_FK FOREIGN KEY (clientCode) REFERENCES Entity(entityCode),
+CONSTRAINT Project_Entity_arch_FK FOREIGN KEY (architectCode) REFERENCES EmployeeInfo(employeeCode),
+CONSTRAINT Project_Entity_cont_FK FOREIGN KEY (contractorCode) REFERENCES EmployeeInfo(employeeCode),
+CONSTRAINT Project_Entity_man_FK FOREIGN KEY (managerCode) REFERENCES EmployeeInfo(employeeCode)
+);
+############################
+CREATE TABLE ProjectInfo(
+projectCode int UNIQUE,
+erfNumber varchar(8),
+projectAddress varchar(150),
+postalCode varchar(4),
+buildingType varchar(50),
+projectStartDate date,
+projectDueDate date,
+projectFinalized date,
+archiveProject tinyInt(1),
+CONSTRAINT ProjectInfo_Project_FK FOREIGN KEY (projectCode) REFERENCES Project(projectCode),
+CONSTRAINT ProjectInfo_Postal_FK FOREIGN KEY (postalCode) REFERENCES postalDetails(postalCode)
+);
+############################
+CREATE TABLE ProjectFinances(
+projectCode int UNIQUE,
+projectFee float,
+amountPaid float,
+CONSTRAINT ProjectFin_Project_FK FOREIGN KEY (projectCode) REFERENCES Project(projectCode)
+);
+############################
+CREATE TABLE Invoice(
+invoiceNumber int Auto_Increment,
+invoiceDate date,
+projectCode int,
+cancelInvoice tinyInt(1), 
+cancelReason varchar(254),
+CONSTRAINT Invoice_PK PRIMARY KEY (invoiceNumber),
+CONSTRAINT Invoice_Project_FK FOREIGN KEY (projectCode) REFERENCES Project(projectCode)
+);
+############################
+CREATE TABLE Receipt(
+receiptNumber int Auto_Increment,
+receiptDate date,
+invoiceNumber int,
+receiptAmount float,
+receiptDescription varchar(100),
+paymentMethod varchar(10),
+cancelReceipt tinyInt(1),
+cancelReason varchar(254),
+CONSTRAINT Receipt_PK PRIMARY KEY (receiptNumber),
+CONSTRAINT Receipt_Invoice_FK FOREIGN KEY (invoiceNumber) REFERENCES Invoice(invoiceNumber)
+);
+############################
+INSERT INTO PostalDetails VALUES('9300', 'Bloemfontein', 'Freestate', 'South Africa');
+INSERT INTO PostalDetails VALUES('7400', 'Cape Town', 'Western Cape', 'South Africa');
+INSERT INTO PostalDetails VALUES('6529', 'George', 'Western Cape', 'South Africa' );
+INSERT INTO PostalDetails VALUES('3000', 'Durban', 'Kwazulu-Natal', 'South Africa');
+INSERT INTO PostalDetails VALUES('0001', 'Johannesburg', 'Kwazulu-Natal', 'South Africa');
+INSERT INTO Positions VALUES('CO', 'Contractor', 'Construction');
+INSERT INTO Positions VALUES('AR', 'Architect', 'Construction');
+INSERT INTO Positions VALUES('PM', 'Project Manager', 'Construction');
+INSERT INTO Positions VALUES('CE', 'Chief Executive Officer', 'Management');
+INSERT INTO Positions VALUES('FA', 'Financial Administrator', 'Finance');
+INSERT INTO Entity VALUES('CO1', 'Kobus Harmse', '55 Marigold Complex', 'Honeycomb Street, Hamilton', '7400', 'kobush@poised.com', '+27735684212', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('CO2', 'Jan Baksteen', '', '16 Kommaweer Street, Belvera', '7400', 'janb@poised.com', '+27735684213', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('CO3', 'Pieter Vogel', '55 Marigold Complex', 'Honeycomb Street, Hamilton', '7400', 'kobush@poised.com', '+27735684212', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('CO4', 'Sarel Seemonster', '', '16 Kommaweer Street, Belvera', '7400', 'janb@poised.com', '+27735684213', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('AR1', 'Henry Moegoe', '', '285 Church Street, Belvera', '7400', 'henrym@poised.com', '+27735684214', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('AR2', 'Piet Pompies', '', '4 Glen Close, Belvera', '7400', 'pietp@poised.com', '+27735684215', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('AR3', 'Sam van Dyk', '', '285 Church Street, Belvera', '7400', 'henrym@poised.com', '+27735684214', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('AR4', 'Piet Pompies', '', '4 Glen Close, Belvera', '7400', 'pietp@poised.com', '+27735684215', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('PM1', 'Zac de Villiers', '', '99 Red Balloons Avenue, Margateville', '7400', 'zacdev@poised.com', '+27735684216', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('PM2', 'Zol Kersner', '', '24 Seven Street', 7400, 'zolk@poised.com', '+27735684217', 0, '2016-03-14', 'E');
+INSERT INTO Entity VALUES('CL1', 'Bright Sparks Company', '', '7 Central Park, Helicon Heights', '9300', 'kobush@bscompany.com', '+27825487352', 0, '2016-03-14', 'C');
+INSERT INTO Entity VALUES('CL2', 'Zander Viljoen', '60 Xen Townhouses', '20 Brill Street, Roodepoort', '0001', 'kobush@omail.com', '+27616514278', 0, '2016-03-14', 'C');
+INSERT INTO Entity VALUES('CL3', 'Derick Mitchel', '60 Xen Townhouses', '20 Brill Street, Roodepoort', '0001', 'kobush@omail.com', '+27616514278', 0, '2016-03-14', 'C');
+INSERT INTO EmployeeInfo VALUES('CO1', '2016-03-14', NULL, '1990-02-15', 'CO', 15000.00);
+INSERT INTO EmployeeInfo VALUES('CO2', '2016-03-14', NULL, '1990-02-15', 'CO', 18000.00);
+INSERT INTO EmployeeInfo VALUES('CO3', '2016-03-14', NULL, '1990-02-15', 'CO', 15000.00);
+INSERT INTO EmployeeInfo VALUES('CO4', '2016-03-14', NULL, '1990-02-15', 'CO', 18000.00);
+INSERT INTO EmployeeInfo VALUES('AR1', '2016-03-14', NULL, '1990-02-15', 'AR', 30000.00);
+INSERT INTO EmployeeInfo VALUES('AR2', '2016-03-14', NULL, '1990-02-15', 'AR', 35000.00);
+INSERT INTO EmployeeInfo VALUES('AR3', '2016-03-14', NULL, '1990-02-15', 'AR', 30000.00);
+INSERT INTO EmployeeInfo VALUES('AR4', '2016-03-14', NULL, '1990-02-15', 'AR', 35000.00);
+INSERT INTO EmployeeInfo VALUES('PM1', '2016-03-14', NULL, '1990-02-15', 'PM', 40000.00);
+INSERT INTO EmployeeInfo VALUES('PM2', '2016-03-14', NULL, '1990-02-15', 'PM', 42500.00);
+INSERT INTO Project VALUES(1, 'Mango Business Complex', 'CL1', 'AR1', 'CO1', 'PM1');
+INSERT INTO Project VALUES(2, 'Viljoen Residence', 'CL2', 'AR2', 'CO2', 'PM2');
+INSERT INTO Project VALUES(3, 'Happy Valley Supermarket', 'CL1', 'AR1', 'CO1', 'PM2');
+INSERT INTO Project VALUES(4, 'Mitchel Residence', 'CL3', 'AR4', 'CO3', 'PM1');
+INSERT INTO ProjectInfo VALUES(1,'D222','145 Mango Road, Bloemfontein','9300','Business Complex','2021-02-01','2025-05-01', NULL,0);
+INSERT INTO ProjectInfo VALUES(2,'A2515','20 Germaine Avenue, Roodepoort','0001','Residential','2022-05-21','2023-07-29', NULL,0);
+INSERT INTO ProjectInfo VALUES(3,'F13154','47 Monument Road, George','6529','Business Complex','2022-06-01','2023-10-01', NULL,0);
+INSERT INTO ProjectInfo VALUES(4,'B251','88 Glen Road, George','6529','Business Complex','2022-08-01','2024-02-01', NULL,0);
+INSERT INTO ProjectFinances VALUES( 1 , 4500000.00, 4150000.00);
+INSERT INTO ProjectFinances VALUES( 2 , 2100000.00, 1780000.00);
+INSERT INTO ProjectFinances VALUES( 3 , 3800000.00, 980000.00);
+INSERT INTO ProjectFinances VALUES( 4 , 1600000.00, 580000.00);
+INSERT INTO Invoice VALUES( 1, '2021-01-31', 1, 0, '');
+INSERT INTO Invoice VALUES( 2, '2022-04-30', 2, 0, '');
+INSERT INTO Invoice VALUES( 3, '2022-07-01', 3, 0, '');
+INSERT INTO Invoice VALUES( 4, '2022-07-01', 4, 0, '');
+INSERT INTO Receipt VALUES(1, '2021-01-31', 1, 250000.00, 'Project Initiation Deposit', 'Card', 0, '');
+INSERT INTO Receipt VALUES(2, '2022-04-30', 2, 150000.00, 'Project Initiation Deposit', 'EFT', 0, '');
+INSERT INTO Receipt VALUES(3, '2022-06-01', 1, 100000.00, '', 'EFT', 0, '');
+INSERT INTO Receipt VALUES(4, '2022-06-01', 3, 150000.00, 'Project Initiation Deposit', 'Cash', 0, '');
+INSERT INTO Receipt VALUES(5, '2022-07-01', 2, 170000.00, '', 'EFT', 0, '');
+INSERT INTO Receipt VALUES(6, '2022-07-01', 4, 980000.00, 'Project Initiation Deposit', 'EFT', 0, '');
+

@@ -1,0 +1,41 @@
+Q 1:
+ Suggest which generic software model will be most appropriate for the
+ development of the following systems. Give reasons for your answer.
+  1 A system to control anti-lock braking in a car - 
+    Reuse-oriented Software Engineering 
+	# Changes wont happen often
+	# Project will be small
+	# Code can be reused for different vehicle models	
+
+  2 A virtual reality system to support software maintenance
+    Increment model
+	# Changes happen frequently
+	# project will be large and fast paced
+	# More functionality is required with every update
+
+  3 A university accounting system that replaces an existing system - 
+    Waterfall Method 
+	# Due to the existing software, a lot of the previous code can be reused and/or modified to fit in with the new software
+	# Periodical updates and add ons
+	# Needs to be thoroughly planned and designed in stages
+	# Should have accurate documentation
+
+  4 An interactive travel planning system that helps users plan journeys with the lowest environmental impact
+    Waterfall Method 
+	# Project will be medium sized
+	# Periodical updates and add ons
+	# Not replacing any systems
+
+Q 2:
+ Why do you think incremental development is the most effective
+ approach for developing business software systems and less appropriate
+ for real-time systems engineering?
+	Developing business software is not as intense and critical compared to real-time systems engineering. Once the business software has been developed and
+	tested, it goes into operation in an office setup and is not expected to change very often, whereas real-time software engineering requires constant on-the-go 		software development to ensure the software stays relevant and constantly protected against criminal elements.
+
+Q 3:
+ Look at the diagram showing reuse-oriented software engineering above.
+ Why do you think it is necessary to have two separate requirements
+ engineering activities in this process?
+	Due to the fact that you will be using existing code, it will in most case have to be modified to work with new or improved functionality 
+	that is required in the new task.

@@ -1,0 +1,34 @@
+Do some research about the different approaches to deployment. What
+are the pros and cons of each? When would you use each approach?
++ Answer the following scenarios:
+- A second-hand book shop is converting from a paper system to
+digital, and they've asked you to develop their catalogue software.
+After finishing, how do you deploy it and why?
+Direct Deployment: Because it is a new system that is being created, direct deployment is used which is
+alse known as immediate cutover.
+Pros: The deployment is quick and effortless.
+Cons: More intense training is needed to teach users how to use the new software.
+	  It's more risky if the system fails.
+
+- A large retail chain has asked you to develop a more modern set of
+tools for their use, including point-of-sale systems, stock records,
+and customer service systems. After finishing, how do you deploy it
+and why?
+Phased Deployment: The old system is kept in use until all the new set of tools have been 
+systematically implemented  and then only is the old system switched off.
+Pros: Users are not affected by the changes as only small parts of the system is replaced at a time.
+Issues around scalability can be addressed without major impact on the users and the system.
+Cons: This method causes that the total deployment of the system takes more time.
+	  There is a small chance of data loss if part of the new system fails.
+
+- You have developed an alternate fire alarm system for a large
+shopping centre. This system's reliability is of utmost importance.
+After finishing, how do you deploy it and why?
+Parallel Deployment: As reliability is of utmost importance, the old system is
+kept in place while there is a transition to the new system. The old system serves as
+backup in order to ensure that the critical operations are still being managed while
+the rollout of the new software is taking place.
+Pros: The old system can act as a benchmark for the new system in terms of reliability, 
+processing accuracy and processing speed, and the correctness of the results from the new system.
+Cons: Some processes may be have to be duplicated on both systems in order to ensure that the 
+programs run independently from one another. 

@@ -1,0 +1,16 @@
+Update anomalies:
+Changing the vendor name for the vendor code 111 would mean that 3 records 
+need to be updated to avoid the anomaly.
+
+
+Insertion anomalies
+If the product name is unknown the rest of the information cannot be entered
+as the product name should match the correct product code
+
+
+
+Deletion anomalies: 
+
+ When deletion of a row can cause more than one set of
+facts to be removed. For example, if John Hunt retires, deleting that row
+causes us to lose information about the New York office.
